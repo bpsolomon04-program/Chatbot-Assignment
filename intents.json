@@ -1,1 +1,40 @@
-
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey bot", "Good day", "Yo"],
+      "responses": ["Welcome. I am ApexBot, ready to assist with your enrollment.", "Hello. How may I optimize your enrollment process today?"],
+      "context_set": ""
+    },
+    {
+      "tag": "prereq_check",
+      "patterns": ["What are the prereqs for this class?", "Can I take CS 301?", "Check requirements for MATH 150", "What do I need for Biology 101"],
+      "responses": ["Affirmative. State the full course code you need checked (e.g., MATH 150)."],
+      "context_set": ""
+    },
+    {
+      "tag": "recommendation",
+      "patterns": ["Suggest a course", "What electives should I take", "I need course recommendations", "What should I register for"],
+      "responses": ["I can provide optimized recommendations. What is your declared major?"],
+      "context_set": ""
+    },
+    {
+      "tag": "deadline_query",
+      "patterns": ["When is the add/drop deadline?", "Tuition due date?", "Important dates for registration", "When is the last day to withdraw?"],
+      "responses": ["Provide the specific administrative deadline you are looking for (e.g., add/drop, tuition)."],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "I'm done", "Thanks for the help", "I'm leaving"],
+      "responses": ["ApexBot signing off. Successful enrollment is confirmed.", "You're welcome. Have a successful semester."],
+      "context_set": ""
+    },
+    {
+      "tag": "no_match",
+      "patterns": [],
+      "responses": ["Query not recognized. I am optimized for four core functions: Greeting, Prerequisites, Recommendations, and Deadlines. Please try again.", "I apologize, that command is outside my current operational scope."],
+      "context_set": ""
+    }
+  ]
+}
